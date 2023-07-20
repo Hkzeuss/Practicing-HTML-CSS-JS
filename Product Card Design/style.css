@@ -1,0 +1,43 @@
+*{ /*Reset Css: Bước đầu tiên và rất quan trọng, dùng để kiểm soát code làm cho khi chạy trên các trình duyệt khác nhau không bị lỗi */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
+    height: 100vh; /* chiều cao bằng 100vh có nghĩa là: đặt chiều cao của phần tử trong "body" là 100% chiều cao của cửa sổ trình duyệt, tức sẽ bằng của sổ trình duyệt luôn. Từ phí trên cùng cho tới dưới cùng*/
+    background: linear-gradient(to right, #008B8B, #4682B4); /* Đặt nền của của phần tử "body", pha màu sẽ được tạo từ phía bên trái sang bên phải theo 2 tông màu chọn là #008B8B và #4682B4 */
+}
+
+.card{  /*Cài đặt thuộc tính cho phần tử bên trong card*/
+    margin: 120px auto; /* */
+    width: 320px; /*Đặt chiều rộng của phần tử "card" là 320px */
+    height: 400px; /*Đặt chiều cao của phần tử "card" là 400px*/
+    background: #272D40; /*Đặt màu nền phần tử card là màu #272D40. Màu rất chill */
+    padding: 20px; /*Khoảng cách từ nội dung đến viền của phần tử card là 20px */
+    border-radius: 15px; /*Thuộc tính này có tác dụng bo tròn các góc. Ở đây là bo tròn góc bán kính 15px, có thể bo tròn tùy sở thích nhé, nhưng đừng bo nhìn ngáo quá :)*/
+    color: white; /*Cái này là để chỉnh màu icon mới thêm vào, ban đầu thêm vào sẽ là màu đen nhá, phải cho thành màu trắng mới nhìn rõ đc, vì nếu để màu đen nó trùng màu với background khó nhìn lắm*/
+    position: relative; /*Định vị phần tử card theo vị trí tương đối so với vị trí mặc định của nó*/
+}
+/* */
+.card_heart, .card_cart{ /*Vì 2 icon này giống nhau về thuộc tính nên những thuộc tính chung sẽ làm chung luôn cho nó ngắn*/
+    font-size: 25px;
+    position: absolute; /*Định vị theo vị trị tuyệt đối so với phần tử cha - phần tử cha chính là position: relative; viết ở .card{} */
+    left: 20px;
+    top: 15px;
+}
+
+.card_cart{ /*Cái icon này cần về bên phải nên sẽ phải làm thuộc tính nó thêm riêng lẻ bên ngoài*/
+    left: unset; /*Hủy thuộc tính left đi mới đè được right*/
+    right: 20px; /*Thực tế nếu để ý thì ngay phần CSS viết chung bên trên thì đã có left của cả card_heart và card_cart. Nên việc giờ viết riêng thêm cho card_cart mà để right thì sẽ k thể có hiệu lực, nói thẳng là right viết sau này k đủ trình áp đặt lên left, nên phải hủy left của card_cart đã viết trước đó bằng left:unset;*/
+}
+
+.card_img{
+    width: 90%;
+}
+
+.card_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}

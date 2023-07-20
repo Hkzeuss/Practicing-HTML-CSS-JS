@@ -53,6 +53,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     font-size: 25px;
     font-weight: bold;
     text-align: center;
+    transition: 0.5s;
 }
 
 .card_title{
@@ -111,6 +112,27 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     transform: translate(-38px, -72px);
 }
 
-.card_price{
+.card:hover .card_price {
     transform: translate(-117px, -72px);
+}
+
+.card_size{
+    margin-top: 150px;
+}
+
+.card_size, .card_color, .card_action {
+    visibility: hidden;
+    opacity: 0.5s;
+    transition-delay: 0.4s;
+}
+
+.card:hover .card_size,
+.card:hover .card_color,
+.card:hover .card_action{
+    visibility: visible;
+    opacity: 100;
+}
+
+.card:hover .card_size{
+    margin-top: -30px;
 }

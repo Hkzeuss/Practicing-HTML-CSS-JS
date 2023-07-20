@@ -101,6 +101,12 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold; /*cho chữ của nút thành in đậm nhìn cho nó đẹp*/
+    margin-right: 5px; /*Làm cho 2 cái nút tách nhau ra 1 khoảng nhìn cho đẹp*/
+    transition: 0.25s;
+}
+
+.card_action button:hover{
+    transform: scale(0.9);
 }
 
 .card:hover .card_img{
@@ -108,6 +114,13 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 
 }
 
+.card_action button:hover{
+    transform:scale(0.9);
+}
+
+.card:hover .card_img{
+    transform: translateY(-90px) rotate(-20deg);
+}
 .card:hover .card_title{
     transform: translate(-38px, -72px);
 }
@@ -123,6 +136,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 .card_size, .card_color, .card_action {
     visibility: hidden;
     opacity: 0.5s;
+    transition: 0.5s; /*Thiếu dòng này là nội dung bị giấu đi nó sẽ k trượt lên đâu mà nó hiện bất ngờ nên trông chơi xấu. Thêm thuộc tính này vào để nó trượt như cách bạn đang nhìn tháy nó bây giờ khi mà di chuột vào chỗ trống dưới phần giá tiền*/
     transition-delay: 0.4s;
 }
 

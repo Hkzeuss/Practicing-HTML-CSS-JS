@@ -41,6 +41,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 
 .card_img{
     width: 90%; /*Chiều rộng bằng 90% phần tử cha ( tức phần từ bao bọc quanh phần tử class .card_img*/
+    transition: 0.5s; /*Hoạt ảnh di chuyển diễn ra trong vòng 0.5s. Cái này thêm vào để hỗ trợ làm mượt chuyển động lướt lên xuống của code thuộc tính dòng 105*/
 }
 .card_img img{
     width: 100%; /*Chiều rộng bằng kích thước như của phần tử cha*/
@@ -99,4 +100,17 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     padding: 10px 20px;
     border-radius: 5px;
     font-weight: bold; /*cho chữ của nút thành in đậm nhìn cho nó đẹp*/
+}
+
+.card:hover .card_img{
+    transform: translateY(-90px) rotate(-20deg); /*Cái thuộc tính transform này làm cho ảnh di chuyển(hoạt ảnh chuyển động)  .Có thể ấn nhanh dùng nhầm translate thường thì nó sẽ nhảy sang bên trái nhé =))*/
+
+}
+
+.card:hover .card_title{
+    transform: translate(-38px, -72px);
+}
+
+.card_price{
+    transform: translate(-117px, -72px);
 }

@@ -1,3 +1,9 @@
+/*Sử dụng font chữ từ bên ngoài thì phải import vào thì mới dùng được. Import tôi hay dùng Font của Google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --primary--color:#F6B8A8 ;
+}
 *{ /*Reset Css: Bước đầu tiên và rất quan trọng, dùng để kiểm soát code làm cho khi chạy trên các trình duyệt khác nhau không bị lỗi */
     margin: 0;
     padding: 0;
@@ -7,6 +13,7 @@
 body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     height: 100vh; /* chiều cao bằng 100vh có nghĩa là: đặt chiều cao của phần tử trong "body" là 100% chiều cao của cửa sổ trình duyệt, tức sẽ bằng của sổ trình duyệt luôn. Từ phí trên cùng cho tới dưới cùng*/
     background: linear-gradient(to right, #008B8B, #4682B4); /* Đặt nền của của phần tử "body", pha màu sẽ được tạo từ phía bên trái sang bên phải theo 2 tông màu chọn là #008B8B và #4682B4 */
+    font-family: "Poppins"; /*Sử dụng font được import từ link đầu CSS nhé*/
 }
 
 .card{  /*Cài đặt thuộc tính cho phần tử bên trong card*/
@@ -33,11 +40,63 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 }
 
 .card_img{
-    width: 90%;
+    width: 90%; /*Chiều rộng bằng 90% phần tử cha ( tức phần từ bao bọc quanh phần tử class .card_img*/
+}
+.card_img img{
+    width: 100%; /*Chiều rộng bằng kích thước như của phần tử cha*/
+    height: 100%; /*Chiều cao bằng kích thước như của phần tử cha*/
+    object-fit: cover; /*Tự thay đổi hình dạng phù hợp trong img*/
 }
 
-.card_img img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover
+.card_title, .card_price{
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card_title{
+    color: var(--primary--color); /*Chọn tên biến cho color nhìn cho nó ngầu chứ riêng product đang làm thì tốn thời gian =))*/
+}
+
+.card_size, .card_color{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /*Khoảng cách giữa dòng size,dòng color và dòng nút bấm sẽ cách nhau 1 khoảng 10px. Không có dòng code này là chúng dính vào nhau đấy, hãy xóa để thử nhìn sự thay đổi nhé*/
+}
+
+
+.card_size span{
+    padding: 1px 10px;
+    background: #dadada;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.card_color span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.card--color--green{
+    background: green;
+}
+
+.card--color--red{
+    background: red;
+}
+
+.card--color--black{
+    background: black;
+}
+
+.card_action button{
+    background: var(--primary--color);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold; /*cho chữ của nút thành in đậm nhìn cho nó đẹp*/
 }

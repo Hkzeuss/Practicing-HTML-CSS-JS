@@ -1,36 +1,37 @@
-# Mô tả Source
+# 🔥 Mô tả Source 🔥
 Đây là 1 sản phẩm code nhỏ về 1 nhánh của kinh doanh. Khi chạy code sẽ ra 1 thẻ sản phẩm có các thuộc tính sau:
-    *Icon tim sản phẩm
-    *Icon giỏ thanh toán
-    *Ảnh minh họa sản phẩm
-    *Tên sản phẩm
-    *Đơn giá của sản phẩm đó
-    *Các size của sản phẩm
-    *Màu sắc của sản phẩm
-    *Nút: mua và Nút: thêm vào giỏ hàng
+* Icon tym sản phẩm
+* Icon giỏ thanh toán
+* Ảnh minh họa sản phẩm
+* ên sản phẩm
+* Đơn giá của sản phẩm đó
+* Các size của sản phẩm
+* Màu sắc của sản phẩm
+* Nút: mua và Nút: thêm vào giỏ hàng
+  
 Thêm các hiệu ứng hình ảnh trượt lên xuống nhìn trông nó đẹp hơn    
 
 
-# Có Bug và mình cũng chưa fix được
-Ở phần source có đoạn mình đã code như sau: (dòng 19->36 theo source của mình)
-.card{  
-    margin: 120px auto; 
-    width: 320px; 
-    height: 400px; 
-    background: #272D40; 
-    padding: 20px; /*Khoảng cách từ nội dung đến viền của phần tử card là 20px */
-    border-radius: 15px; 
-    color: white; 
-    position: relative; 
-}
+# 🔥 Có Bug và mình cũng chưa fix được 🔥
+Ở phần source có đoạn mình đã code như sau: (dòng 19->36 theo source của mình):
+- .card{  
+   -    margin: 120px auto; 
+   *    width: 320px; 
+   *    height: 400px; 
+   *    background: #272D40; 
+   *    padding: 20px; 
+   *    border-radius: 15px; 
+   *    color: white; 
+   *    position: relative; 
+- }
 
-.card_heart, .card_cart{ 
-    font-size: 25px; 
-    position: absolute; 
-    left: 20px; 
-    top: 15px; 
-    cursor: pointer; 
-}
+- .card_heart, .card_cart{ 
+   *    font-size: 25px; 
+   *    position: absolute; 
+   *    left: 20px; 
+   *   top: 15px; 
+   *   cursor: pointer; 
+- }
 
 _Mình đã thêm đầy đủ position: relative; ở phần tử cha và position: absolute; ở phần tử con. Sau đó có áp dụng hoạt ảnh bàn tay cursor cho "cardheart" và cả cardcart. Vấn đề ở đây là chỉ có cardcart được áp dụng còn cardheart thì lại không. Khi bạn chạy code và di chuột vào phần icon heart và icon cart sẽ thấy phần khác biệt._
 

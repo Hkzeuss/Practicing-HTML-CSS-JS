@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root{
-    --primary--color:#F6B8A8 ;
+    --primary--color:#F6B8A8 ; /*Đặt mã màu thành tên biến, thích màu nào r thì đặt về sau chỉ cần gọi chứ k cần phải nhớ mã màu nữa*/
 }
 *{ /*Reset Css: Bước đầu tiên và rất quan trọng, dùng để kiểm soát code làm cho khi chạy trên các trình duyệt khác nhau không bị lỗi */
     margin: 0;
@@ -26,12 +26,13 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     color: white; /*Cái này là để chỉnh màu icon mới thêm vào, ban đầu thêm vào sẽ là màu đen nhá, phải cho thành màu trắng mới nhìn rõ đc, vì nếu để màu đen nó trùng màu với background khó nhìn lắm*/
     position: relative; /*Định vị phần tử card theo vị trí tương đối so với vị trí mặc định của nó*/
 }
-/* */
+
 .card_heart, .card_cart{ /*Vì 2 icon này giống nhau về thuộc tính nên những thuộc tính chung sẽ làm chung luôn cho nó ngắn*/
-    font-size: 25px;
+    font-size: 25px; /*Kích thước chữ bằng 25px*/
     position: absolute; /*Định vị theo vị trị tuyệt đối so với phần tử cha - phần tử cha chính là position: relative; viết ở .card{} */
-    left: 20px;
-    top: 15px;
+    left: 20px; /*Đặt khoảng cách từ lề bên trái của 2 phần tử class là 20px*/
+    top: 15px; /*Đặt khoảng cách từ lề trên cùng của 2 phần tử class bằng 15px*/
+    cursor: pointer;
 }
 
 .card_cart{ /*Cái icon này cần về bên phải nên sẽ phải làm thuộc tính nó thêm riêng lẻ bên ngoài*/
@@ -50,10 +51,10 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 }
 
 .card_title, .card_price{
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    transition: 0.5s;
+    font-size: 25px; /*Kích thước chữ là 25px*/
+    font-weight: bold; /*Đặt độ đậm cho chữ*/
+    text-align: center; /*căn chữ(nội dung) ở giữa theo chiều ngang*/
+    transition: 0.5s; /*Hoạt ảnh diễn ra trong vòng 0.5s; Nhìn trông mượt hơn*/
 }
 
 .card_title{
@@ -61,8 +62,8 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 }
 
 .card_size, .card_color{
-    display: flex;
-    align-items: center;
+    display: flex; /*Kiểm soát việc sắp xếp và căn chỉnh các phần tử bên trong chúng bằng thuộc tính "flex-flexbox"*/
+    align-items: center; /*Căn chỉnh nội dung được căn giữa theo chiều dọc*/
     margin-bottom: 10px; /*Khoảng cách giữa dòng size,dòng color và dòng nút bấm sẽ cách nhau 1 khoảng 10px. Không có dòng code này là chúng dính vào nhau đấy, hãy xóa để thử nhìn sự thay đổi nhé*/
 }
 
@@ -72,6 +73,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     background: #dadada;
     border-radius: 5px;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .card_color span{
@@ -79,6 +81,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     height: 15px;
     border-radius: 50%;
     margin: 0 5px;
+    cursor: pointer;
 }
 
 .card--color--green{
@@ -94,15 +97,16 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 }
 
 .card_action button{
-    background: var(--primary--color);
-    border: none;
-    outline: none;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
+    background: var(--primary--color); /*Màu nền cho nút là mã màu đã đc đặt gán tên biến ở đầu file CSS*/
+    border: none; /*Nút sẽ không có viền*/
+    outline: none; /*Khi ấn vào nút thì nút sẽ k hiện viền*/
+    color: white; /*Màu chữ của nút là màu trắng*/
+    padding: 10px 20px; /*Khoảng cách giữa chữ trong nút so với viền của nút. 10px là đại diện cho khoảng cách Trên - Dưới; 20px là khoảng cách Trái - Phải*/
+    border-radius: 5px; /*Bo góc các nút tròn nhìn cho đẹp. Ở đây bo 1 góc tròn bán kính 5px*/
     font-weight: bold; /*cho chữ của nút thành in đậm nhìn cho nó đẹp*/
     margin-right: 5px; /*Làm cho 2 cái nút tách nhau ra 1 khoảng nhìn cho đẹp*/
-    transition: 0.25s;
+    transition: 0.25s; /*Thêm hiệu ứng chuyển đổi mượt, thời gian hoạt ảnh diễn ra là 0.25s*/
+    cursor: pointer; /*Thay đổi con trỏ chuột thành bàn tay khi di chuột vào nó*/
 }
 
 .card_action button:hover{
@@ -122,7 +126,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     transform: translateY(-90px) rotate(-20deg);
 }
 .card:hover .card_title{
-    transform: translate(-38px, -72px);
+    transform: translate(-30px, -72px);
 }
 
 .card:hover .card_price {
@@ -135,7 +139,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 
 .card_size, .card_color, .card_action {
     visibility: hidden;
-    opacity: 0.5s;
+    opacity: 0; /*Nếu thêm "s" ở cuối thành 0s thì khi hoạt ảnh trượt xuống nó sẽ bị khựng lại 1 chút trông rất xấu, bạn có thể thử thêm thành 0s thay vì 0 nhé*/
     transition: 0.5s; /*Thiếu dòng này là nội dung bị giấu đi nó sẽ k trượt lên đâu mà nó hiện bất ngờ nên trông chơi xấu. Thêm thuộc tính này vào để nó trượt như cách bạn đang nhìn tháy nó bây giờ khi mà di chuột vào chỗ trống dưới phần giá tiền*/
     transition-delay: 0.4s;
 }

@@ -4,10 +4,10 @@
 :root{
     --primary--color:#F6B8A8 ; /*Đặt mã màu thành tên biến, thích màu nào r thì đặt về sau chỉ cần gọi chứ k cần phải nhớ mã màu nữa*/
 }
-*{ /*Reset Css: Bước đầu tiên và rất quan trọng, dùng để kiểm soát code làm cho khi chạy trên các trình duyệt khác nhau không bị lỗi */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{ /*Reset Css: giúp loại bỏ các giá trị mặc định của trình duyệt, đồng thời kiểm soát và đảm bảo tính nhất quán giữa các trình duyệt khác nhau. Nó là một bước quan trọng để bắt đầu phát triển trang web một cách chính xác và dễ dàng quản lý kiểu dáng */
+    margin: 0; /*Đặt giá trị = 0 cho tất cả phần tử. Loại bỏ khoảng cách giữa các phần tử và cạnh của khung trình bày của chúng*/
+    padding: 0; /*Đặt giá trị = 0 cho tất cả các phần tử. Loại bỏ khoảng cách giữa nội dung của phần tử và khung trình bày của chúng*/
+    box-sizing: border-box; /*Kiểm soát kích thước của phần tử một cách chính xác và tránh xảy ra lỗi bố cục của trang*/
 }
 
 body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
@@ -32,7 +32,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
     position: absolute; /*Định vị theo vị trị tuyệt đối so với phần tử cha - phần tử cha chính là position: relative; viết ở .card{} */
     left: 20px; /*Đặt khoảng cách từ lề bên trái của 2 phần tử class là 20px*/
     top: 15px; /*Đặt khoảng cách từ lề trên cùng của 2 phần tử class bằng 15px*/
-    cursor: pointer;
+    cursor: pointer; /*Thay đổi con trỏ chuột thành bàn tay khi di chuột vào nó*/
 }
 
 .card_cart{ /*Cái icon này cần về bên phải nên sẽ phải làm thuộc tính nó thêm riêng lẻ bên ngoài*/
@@ -69,31 +69,32 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 
 
 .card_size span{
-    padding: 1px 10px;
-    background: #dadada;
-    border-radius: 5px;
-    margin: 0 5px;
-    cursor: pointer;
+    padding: 1px 10px; /*Đawtk khoảng cách giữa nội dung của phần tử span và viền của nó: 1px cho phía trên và dưới; 10px cho bên Trái và bên Phải*/
+    background: #dadada; /*Màu nền cho span là #dadada*/
+    border-radius: 5px; /*Bo góc các phần tử span*/
+    margin: 0 5px; /*Các phần tử span khi hiển thị cùng với nhau sẽ có khoảng cách ở 2 bên cạnh chũng là 5px*/
+    cursor: pointer; /*Thay đổi con trỏ chuột thành bàn tay khi di chuột vào nó*/
+    color: black; /*Cho màu chữ trong các size thành màu đen cho dễ nhìn*/
 }
 
 .card_color span{
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
+    width: 15px; /*Chiều rộng các phần tử span là 15px*/
+    height: 15px; /*Chiều cao các phần tử span là 15px*/
+    border-radius: 50%; /*Tạo bán kính bằng 1 nửa chiều cao của phần tử, lúc đó sẽ làm cho phần tử thành hình tròn*/
+    margin: 0 5px; /*Đặt khoảng cách giữa các phần tử span khi chúng được hiển thị kề nhau, khoảng cách 2 bên là 5px*/
+    cursor: pointer; /*Thay đổi con trỏ chuột thành bàn tay khi di chuột vào nó*/
 }
 
 .card--color--green{
-    background: green;
+    background: green; /*Màu nền*/
 }
 
 .card--color--red{
-    background: red;
+    background: red; /*Màu nền*/
 }
 
 .card--color--black{
-    background: black;
+    background: black; /*Màu nền*/
 }
 
 .card_action button{
@@ -110,7 +111,7 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 }
 
 .card_action button:hover{
-    transform: scale(0.9);
+    transform: scale(0.9); /*Khi chuột di qua các phần tử button bên trong các phần tử card_action, chúng sẽ được thu nhỏ đi 1 lượng là 90% của kích thước ban đầu. Điều này tạo ra hiệu ứng thu nhỏ (scale down) cho các phần tử button khi di chuột qua nó*/
 }
 
 .card:hover .card_img{
@@ -119,38 +120,39 @@ body{  /*Cài đặt thuộc tính cho phần tử bên trong body*/
 }
 
 .card_action button:hover{
-    transform:scale(0.9);
+    transform:scale(0.9); /*Y hệt của .card_cations button:hover{} */
 }
 
 .card:hover .card_img{
-    transform: translateY(-90px) rotate(-20deg);
+    transform: translateY(-90px) rotate(-20deg); /*Khi con trỏ chuột đi qua phần tử "card", các phần tử có lớp "card_img" veeb trong sẽ di chuyển lên theo trục Y(-90px) cà xoay theo hướng ngược chiều kim đồng hồ với 1 góc -20 độ. Điều này tạo ra hiệu ứng nâng phần tử "card_img" lên và xoay nó một góc nhất định khi di chuột qua "card"*/
 }
 .card:hover .card_title{
-    transform: translate(-30px, -72px);
+    transform: translate(-30px, -72px); /*Khi con trỏ chuột đi qua phần từ "card", các phần tử có trong lớp "card_title" bên trong sẽ di chuyển sang bên trái(-30px) và lên trên (-72px). Điều này tạo nên hiệu ứng di chuyển các phần tử "card_title" sang vị trí mới khi di chuột qua "card"*/
 }
 
 .card:hover .card_price {
-    transform: translate(-117px, -72px);
+    transform: translate(-117px, -72px); /*Khi con trỏ chuột di qua phần tử "card", các phần tử có lớp "card_price" bên trong sẽ di chuyển sang bên trái (-117px) và lên trên (-72px). Điều này tạo ra hiệu ứng di chuyển các phần tử "card_price" sang vị trí mới khi di chuột qua "card"*/
 }
 
 .card_size{
-    margin-top: 150px;
+    margin-top: 150px; /*Phần "card_size sẽ bị đẩy thoát ra khỏi màn hình 1 khoảng 150px"*/
 }
 
 .card_size, .card_color, .card_action {
     visibility: hidden;
     opacity: 0; /*Nếu thêm "s" ở cuối thành 0s thì khi hoạt ảnh trượt xuống nó sẽ bị khựng lại 1 chút trông rất xấu, bạn có thể thử thêm thành 0s thay vì 0 nhé*/
     transition: 0.5s; /*Thiếu dòng này là nội dung bị giấu đi nó sẽ k trượt lên đâu mà nó hiện bất ngờ nên trông chơi xấu. Thêm thuộc tính này vào để nó trượt như cách bạn đang nhìn tháy nó bây giờ khi mà di chuột vào chỗ trống dưới phần giá tiền*/
-    transition-delay: 0.4s;
+    transition-delay: 0.4s; /*Thời gian đặt độ trễ để chuyển hiệu ứng là 0.4s*/
 }
 
+/*Trong trường hợp dưới đây, trước khi di chuột qua phần tử "card", các phần tử "card_size", "card_color" và "card_action" có thể được ẩn hoặc có độ mờ để ẩn đi. Tuy nhiên, khi con trỏ chuột di qua phần tử cha "card", các phần tử bên trong nó sẽ trở nên hiển thị (visible) và không còn độ mờ (opacity: 100%). Điều này tạo ra hiệu ứng hiển thị mượt mà khi di chuột qua "card" và các phần tử bên trong nó.*/
 .card:hover .card_size,
 .card:hover .card_color,
 .card:hover .card_action{
-    visibility: visible;
+    visibility: visible; /*Khi con trỏ chuột di qua phần tử cha có lớp "card", các phần tử có lớp "card_size", "card_color" và "card_action" bên trong sẽ trở nên hiển thị và có độ mờ (độ trong suốt) là 100%.*/
     opacity: 100;
 }
 
 .card:hover .card_size{
-    margin-top: -30px;
+    margin-top: -30px; /*Khi con trỏ chuột di qua phần tử cha có lớp "card", các phần tử "card_size" bên trong sẽ được di chuyển lên (margin-top: -30px). Điều này tạo ra hiệu ứng di chuyển các phần tử "card_size" lên trên so với vị trí ban đầu khi di chuột qua phần tử "card".*/
 }

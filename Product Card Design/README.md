@@ -1,5 +1,5 @@
 # Có Bug và mình cũng chưa fix được
-Ở phần source có đoạn mình đã code như sau:
+Ở phần source có đoạn mình đã code như sau: (dòng 19->36 theo source của mình)
 .card{  
     margin: 120px auto; 
     width: 320px; 

@@ -53,48 +53,48 @@ body{
 }
 
 .card h2{
-    margin-top: 35px;
+    margin-top: 35px; /*Đặt khoảng cách phần tử h2 đến phần tử cha là card lên trên 35px*/
 }
 
 .card p{
-    color: var(--primary--color);
+    color: var(--primary--color); /*Đặt màu chữ cho phần tử p thuộc phần tử cha là card với mã màu được gán từ đầu*/
 }
 
 .card_social{
-    margin: 25px 0;
+    margin: 25px 0; /*Đặt khoảng cách viền xung quanh phần tử card.social. Khoảng cách 25px cả bên trên và bên dưới; không có khoảng cách ở 2 bên trái phải*/
 }
 
 .card_social a{
-    color: white;
-    margin: 25px 20px;
-    font-size: 20px;
+    color: white; /*Màu chữ thẻ a là màu trắng*/
+    margin: 25px 20px; /*Khoảng cách viền xung quanh với các liên kết. Ở đây có khoảng cách 25px bên trên và bên dưới; khoảng cách 20px bên trái và bên phải*/
+    font-size: 20px; /*đặt kích chữ cho các liên kết thẻ a là 20px*/
 }
 
 .card_social a:hover{
-    color: var(--primary--color);
+    color: var(--primary--color); /*Đặt màu khi di chuột vào sẽ đổi thành màu đã đặt*/
 }
 
 .card button{
-    width: 150px;
-    height: 40px;
-    border: 1px solid var(--primary--color);
-    background: transparent;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
+    width: 150px; /*Chiều rộng nút*/
+    height: 40px; /*Chiều cao nút*/
+    border: 1px solid var(--primary--color); /*Viền nút có độ dày là 1px và viền có màu là màu đã gán đầu file css*/
+    background: transparent; /*Màu nền của nút là trong suốt*/
+    color: white; /*Màu chữ của nút sẽ là màu trắng*/
+    border-radius: 10px; /*Bo các góc có nút*/
+    cursor: pointer; /*Sẽ hiện bàn tay khi di chuột vào nút*/
+    transition: 0.5s; /*Độ mượt chuyển nền nút sang màu khác là 0.5s*/
 }
 
 .card button:hover{
-    background-color: var(--primary--color);
+    background-color: var(--primary--color); /*Màu nền của nút sẽ thay đổi khi di chuột vào*/
 }
 
-.card_img:hover{
-    width: 100%;
-    height: 100%;
-    border-radius: unset;
-    transform: unset;
-    border: none;
+.card_img:hover{ /*Làm hiệu ứng hình ảnh khi ấn vào sẽ phóng to ra toàn diện tích thẻ*/
+    width: 100%; /*Ảnh sẽ lấp đầy phần tử card khi di chuột vào ảnh theo chiều rộng */
+    height: 100%; /*Ảnh sẽ lấp đầy phần tử card khi di chuột vào theo chiều cao*/
+    border-radius: unset; /*Ở đây, khi di chuột vào thì vòng tròn quanh ảnh sẽ bị vỡ ra để ảnh được phóng to*/
+    transform: unset; /*Gỡ bỏ hiệu ứng đã được đặt trước đó cho phần tử card_img. Điều này sẽ làm cho phía bên trên của ảnh sẽ không bị thừa 1 khoảng khi di chuột vào*/
+    border: none; /*Di chuột vào ảnh thì viền sẽ được xóa bỏ. Nếu không để none thì ảnh sẽ vẫn phóng to vừa hết chỗ của card nhưng cái viền nó sẽ vẫn còn*/
 }
 
 

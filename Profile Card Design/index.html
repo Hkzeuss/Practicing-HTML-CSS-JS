@@ -1,22 +1,45 @@
 <!--NÊN ĐỌC README.md CỦA SOURCE TRƯỚC KHI VÀO ĐÂY-->
 <!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!--Cái này các bạn lên boxicon để lấy icon nhé (boxicons.com). Thực tế các bạn lấy icon ở web nào cũng được thôi, mình quen lấy ở boxicon nên lấy link ở đó. Mã muốn dùng đc icon thì cần link thư viện boxicon trước nhé =)). Như mình đang link này-->
     <title>Profile Card Design</title>
 </head>
 <body>
+    <!--Card 1-->
     <div class="card">
         <div class="card_img">  
-            <img src="HK.jpg" alt="">
-
+            <img class="img" src="https://i.kym-cdn.com/entries/icons/original/000/043/403/cover3.jpg" alt="">
         </div>
         <h2> Hoàng Kiên</h2>
+        <p> Fullstack Developer</p>
+        <div class="card_social">
+            <a href="https://www.facebook.com/ZeussHk3002/">
+                <i class='bx bxl-facebook-circle'></i> <!-- class này là từ boxicons nhé chứ mình không đủ trình nghĩ ra đâu :> -->
+            </a>
+            <a href=""> <!--Có link của Tiktok thì add vào đây nhé-->
+                <i class='bx bxl-tiktok' ></i> <!--Cái này cũng vậy-->
+            </a>
+            <a href="https://github.com/Hkzeuss">
+                <i class='bx bxl-github' ></i> <!--Đây nữa-->
+            </a>
+            <a href=""> <!--Có link của Youtube thì add vào đây nhé-->
+                <i class='bx bxl-youtube' ></i> <!--Đều là icon class từ boxicons-->
+            </a>
+        </div>
+        <button>Contac Me</button>
+    </div>
+
+    <!--Card 2-->
+    <div class="card">
+        <div class="card_img">  
+            <img class="img" src="HK.jpg" alt=""> <!-- Link ảnh thì ảnh off cũng được, lười quá thì lấy ảnh onl như card 1 và card 2 nhé :)) -->
+        </div>
+        <h2> Kiên ProVip</h2>
         <p> Fullstack Developer</p>
         <div class="card_social">
             <a href="https://www.facebook.com/ZeussHk3002/">
@@ -34,5 +57,29 @@
         </div>
         <button>Contac Me</button>
     </div>
+
+    <!--Card 3-->
+    <div class="card">
+        <div class="card_img">  
+            <img class="img" src="https://www.fox21news.com/wp-content/uploads/sites/37/2022/11/Screenshot-2022-11-04-153732.png?w=875" alt="">
+        </div>
+        <h2> Kiên Hoàng</h2>
+        <p> Fullstack Developer</p>
+        <div class="card_social">
+            <a href="https://www.facebook.com/ZeussHk3002/">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+            <a href="">
+                <i class='bx bxl-tiktok' ></i>
+            </a>
+            <a href="https://github.com/Hkzeuss">
+                <i class='bx bxl-github' ></i>
+            </a>
+            <a href="">
+                <i class='bx bxl-youtube' ></i>
+            </a>
+        </div>
+        <button>Contac Me</button>
+    </div>    
 </body>
 </html>

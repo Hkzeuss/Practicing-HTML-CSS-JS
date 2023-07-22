@@ -10,4 +10,4 @@ Thêm các hiệu ứng hình ảnh zoom khi di chuột vào hình ảnh nhìn t
 
 
 # 🔥 Có Bug và mình cũng chưa fix được 🔥
-![Demo Video](DemoProfileCardDesign.mp4)
+![Demo Video]([DemoProfileCardDesign.mp4](https://www.youtube.com/watch?v=zAHXsl6fZ1Q)https://www.youtube.com/watch?v=zAHXsl6fZ1Q)

@@ -36,3 +36,10 @@ Thêm các hiệu ứng hình ảnh trượt lên xuống nhìn trông nó đẹ
 _Mình đã thêm đầy đủ position: relative; ở phần tử cha và position: absolute; ở phần tử con. Sau đó có áp dụng hoạt ảnh bàn tay cursor cho "cardheart" và cả cardcart. Vấn đề ở đây là chỉ có cardcart được áp dụng còn cardheart thì lại không. Khi bạn chạy code và di chuột vào phần icon heart và icon cart sẽ thấy phần khác biệt._
 
 _Còn lại đều ổn và theo đúng ý mình. Bạn này dùng lại code nếu muốn thêm gì thì tự thêm theo ý mình nhé. Và ai fix được bug trên thì có thể inbox với mình qua đường link mình để ở profile mình rồi nhé. Cảm ơn mọi người rất nhiều!_
+
+
+# 🔥 Demo 🔥
+<div style="display: flex;">
+  <img src="https://github.com/Hkzeuss/Practicing-HTML-CSS-JS/blob/main/Product%20Card%20Design/Demo02.jpg" alt="Demo01" style="flex: 50%; padding: 5px; width: 100%;">
+  <img src="https://github.com/Hkzeuss/Practicing-HTML-CSS-JS/blob/main/Product%20Card%20Design/Demo02.jpg" alt="Demo02" style="flex: 50%; padding: 5px; width: 100%;">
+</div>

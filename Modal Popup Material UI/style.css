@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-image:linear-gradient(to right, #008B8B, #4682B4); /* Đặt nền của của phần tử "body", pha màu sẽ được tạo từ phía bên trái sang bên phải theo 2 tông màu chọn là #008B8B và #4682B4 */
+}
